@@ -48,40 +48,6 @@
 
             console.log(url2);
 
-            
-
-
-//$.ajax({
-//
-//
-//
-//    url: url2,
-//    method: 'GET',
-//    error: (e) => {
-//        console.log(e);
-//    },
-//    success: (data) => {
-//        console.log(data);
-//        let htmlStr = ``;
-//        for(let index in data) {
-//        htmlStr += `<tr>
-//             <td>${+index+1}</td>
-//            <td>${data[index].txt}</td>
-//            <td>${data[index].rate}</td>
-//            <td>${data[index].cc}</td>
-//            <td>${data[index].exchangedate}</td>
-//        </tr>`;
-//        var Inp3 = data[index].txt;
-//    }
-//    document.querySelector('tbody').innerHTML = htmlStr;
-//           }
-//
-//
-//
-//});
-
-
-
 $.ajax({
 
 
@@ -105,7 +71,7 @@ $.ajax({
             var rendered = Inp3.substring(0, Inp2);
             console.log(rendered);
             if (rendered === Inp) {
-            var indRend = data.indexOf(this.data.txt);
+            var indRend = data.indexOf(this.Inp3);
             console.log(indRend)
                 console.log("HI");
                 $.ajax({
